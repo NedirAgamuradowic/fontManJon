@@ -211,7 +211,7 @@ body i, .iconbox .iconbox__icon, .iconbox .iconbox__name, .code-box span{
 }
 .box--modal{
 	width: 80%;
-	height: 70%;
+	height: 60%;
 	position: relative;
 }
 .box--icon{
