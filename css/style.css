@@ -300,7 +300,7 @@ body i, .iconbox .iconbox__icon, .iconbox .iconbox__name, .code-box span{
 
 /* modal icon */
 .modal-icon{
-	grid-template-rows: 40px 170px 110px ;
+	grid-template-rows: 40px 170px 120px ;
 	max-width: 700px;
 }
 .modal__name{
