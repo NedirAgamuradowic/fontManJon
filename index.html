@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <title>Font ManJon</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="section header container flex" id="header">
+      <div class="logo">
+        <a href="#" class="link logo__link"
+          ><i class="fa-solid fa-font-awesome"></i
+          ><span class="tablet logo__tablet">font manJon</span></a
+        >
+      </div>
+      <div class="cdn">
+        <code class="code">
+          &lt;link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" /&gt;
+        </code>
+        <button type="button" class="btn btn--block">cdn link</button>
+      </div>
+    </header>
+
+    <!-- search -->
+    <section class="search section container">
+      <h2 class="hide">search</h2>
+      <div class="input-group flex">
+        <form action="#" method="post" class="input-group__form">
+          <input
+            aria-label="search"
+            type="search"
+            placeholder="search icon..."
+            class="input input--search input-group__search"
+            id="search"
+          />
+        </form>
+        <button
+          aria-label="search"
+          type="button"
+          class="btn btn--icon input-group__btn"
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- filter -->
+    <section class="section flex container filter" id="filter">
+      <h2 class="hide">Filter</h2>
+      <button
+        type="button"
+        class="btn btn--text filter__btn"
+        data-findElement="icongrid"
+      >
+        All
+      </button>
+      <button
+        type="button"
+        class="btn btn--text filter__btn"
+        data-findElement="icongrid"
+      >
+        Brands
+      </button>
+      <button
+        type="button"
+        class="btn btn--text filter__btn"
+        data-findElement="icongrid"
+      >
+        Solid
+      </button>
+      <button
+        type="button"
+        aria-label="icon"
+        class="tablet btn btn--icon"
+        data-findElement="icongrid"
+      >
+        <i class="fa-solid fa-table-cells-large"></i>
+      </button>
+      <button
+        type="button"
+        aria-label="icon"
+        class="tablet btn btn--icon compact__btn"
+        data-findElement="icongrid"
+      >
+        <i class="fa-solid fa-table-cells"></i>
+      </button>
+      <button
+        type="button"
+        aria-label="icon"
+        class="btn btn--icon"
+        data-findElement="addmodal"
+      >
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </section>
+
+    <!-- icons -->
+    <section class="section icon-container">
+      <h2 class="hide">Icons</h2>
+      <div class="grid grid--icon container" id="icongrid">
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-plus"></i></span>
+          <span class="iconbox__name">plus</span>
+          <code class="code">
+            &lt;i class="fa-solid fa-plus"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-facebook"></i
+          ></span>
+          <span class="iconbox__name">facebook</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-facebook"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-house"></i></span>
+          <span class="iconbox__name">house</span>
+          <code class="code">
+            &lt;i class="fa-solid fa-house"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-twitter"></i
+          ></span>
+          <span class="iconbox__name">twitter</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-twitter"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <span class="iconbox__name">magnifying-glass</span>
+          <code class="code">
+            &lt;i class="fa-solid fa-magnifying-glass"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></span>
+          <span class="iconbox__name">instagram</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-instagram"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-user"></i></span>
+          <span class="iconbox__name">user</span>
+          <code class="code">
+            &lt;i class="fa-solid fa-user"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-tiktok"></i></span>
+          <span class="iconbox__name">tiktok</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-tiktok"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-check"></i></span>
+          <span class="iconbox__name">check</span>
+          <code class="code">
+            &lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-linkedin"></i
+          ></span>
+          <span class="iconbox__name">linkedin</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-linkedin"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-download"></i
+          ></span>
+          <span class="iconbox__name">download</span>
+          <code class="code">
+            &lt;i class="fa-solid fa-download"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-github"></i></span>
+          <span class="iconbox__name">github</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-github"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-image"></i></span>
+          <span class="iconbox__name">image</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-image"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-youtube"></i
+          ></span>
+          <span class="iconbox__name">youtube</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-youtube"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-phone"></i></span>
+          <span class="iconbox__name">phone</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-phone"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-wordpress"></i
+          ></span>
+          <span class="iconbox__name">wordpres</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-wordpress"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-bars"></i></span>
+          <span class="iconbox__name">bars</span>
+          <code class="code">&lt;i class="fa-solid fa-bars"&gt;&lt;/i&gt;</code>
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-slack"></i></span>
+          <span class="iconbox__name">slack</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-slack"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-envelope"></i
+          ></span>
+          <span class="iconbox__name">envelope</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-envelope"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-figma"></i></span>
+          <span class="iconbox__name">figma</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-figma"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-star"></i></span>
+          <span class="iconbox__name">star</span>
+          <code class="code">&lt;i class="fa-solid fa-star"&gt;&lt;/i&gt;</code>
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-apple"></i></span>
+          <span class="iconbox__name">apple</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-apple"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-music"></i></span>
+          <span class="iconbox__name">music</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-music"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-google"></i></span>
+          <span class="iconbox__name">google</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-google"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-heart"></i></span>
+          <span class="iconbox__name">heart</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-heart"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-docker"></i></span>
+          <span class="iconbox__name">docker</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-docker"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></span>
+          <span class="iconbox__name">arrow-right</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-windows"></i
+          ></span>
+          <span class="iconbox__name">windows</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-windows"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-xmark"></i></span>
+          <span class="iconbox__name">xmark</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-xmark"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-brands fa-paypal"></i></span>
+          <span class="iconbox__name">paypal</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-paypal"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-comment"></i></span>
+          <span class="iconbox__name">comment</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-comment"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-dribbble"></i
+          ></span>
+          <span class="iconbox__name">dribbble</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-dribbble"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-arrow-up"></i
+          ></span>
+          <span class="iconbox__name">arrow-up</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-arrow-up"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-dropbox"></i
+          ></span>
+          <span class="iconbox__name">dropbox</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-dropbox"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-face-smile"></i
+          ></span>
+          <span class="iconbox__name">face smile</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-face-smile"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-android"></i
+          ></span>
+          <span class="iconbox__name">android</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-android"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-solid fa-paperclip"></i
+          ></span>
+          <span class="iconbox__name">paperclip</span>
+          <code class="code"
+            >&lt;i class="fa-solid fa-paperclip"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-codepen"></i
+          ></span>
+          <span class="iconbox__name">codepen</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-codepen"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-file"></i></span>
+          <span class="iconbox__name">file</span>
+          <code class="code">&lt;i class="fa-solid fa-file"&gt;&lt;/i&gt;</code>
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></span>
+          <span class="iconbox__name">whatsapp</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-whatsapp"&gt;&lt;/i&gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"><i class="fa-solid fa-bolt"></i></span>
+          <span class="iconbox__name">bolt</span>
+          <code class="code">&lt;i class="fa-solid fa-bolt"&gt;&lt;/i&gt;</code>
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <div class="iconbox box box--icon flex">
+          <span class="iconbox__icon"
+            ><i class="fa-brands fa-telegram"></i
+          ></span>
+          <span class="iconbox__name">telegram</span>
+          <code class="code">
+            &lt;i class="fa-brands fa-telegram"&gt; &lt; /i &gt;</code
+          >
+          <button aria-label="iconBtn" type="button" class="btn btn--copy">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal add -->
+    <div class="modal" id="addmodal">
+      <div class="box box--modal modal-add flex">
+        <p>
+          <span class="tablet">This is an imaginary website.</span> Here you can
+          add icons from font awesome
+        </p>
+        <form action="#" method="post">
+          <div class="input-box">
+            <label for="name" class="input-box__label">name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input input--name input-box__input"
+            />
+          </div>
+          <div class="input-box">
+            <label for="code" class="input-box__label">code</label>
+            <input
+              type="text"
+              name="code"
+              id="code"
+              class="input input--code input-box__input"
+            />
+          </div>
+          <button type="button" class="btn btn--block">add icon</button>
+        </form>
+        <button
+          class="btn btn--close"
+          id="closeAdd"
+          data-findElement="addmodal"
+        >
+          X
+        </button>
+      </div>
+    </div>
+
+    <!-- modal icon -->
+    <div class="modal" id="iconmodal">
+      <div class="box box--modal modal-icon grid">
+        <h2 class="modal__name name">house</h2>
+        <div class="modal__icon icon"><i class="fa-solid fa-house"></i></div>
+        <div class="modal__code">
+          <code class="code-box">
+            <span class="code-start">&lt;i class="</span
+            ><span class="code-name">fa-type fa-name</span
+            ><span class="code-end">"&gt;&lt;/i&gt;</span>
+          </code>
+        </div>
+        <button class="btn btn--close" data-findElement="iconmodal">X</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
